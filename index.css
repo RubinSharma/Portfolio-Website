@@ -9,24 +9,32 @@ body{
 a{
     text-decoration: none;
     color: #dddddd;
+    transition: transform .2s;
 }
 
 a:hover{
-    font-weight: bold;
+    transform: scale(1.5);
+    
 }
 
 li{
     list-style-type: none;
 }
 
-.button-el{
-    margin-top: 5px;
-}
-.button-el button{
-    font-size: 16px;
+.social-media{
+    display: block;
 }
 
-@media screen and (max-width: 799px){
+.social-media img{
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/*For mobile screen*/
+@media screen and (max-width: 599px){
     .navigation-bar{
         display: flex;
         justify-content: space-between;
@@ -48,9 +56,26 @@ li{
         padding-top: 40px;
         margin-left: 5px;
     }
+    .social-media a{
+        display: block;
+    }
+    .welcome-text{
+        font-size: 32px;
+        color: #dddddd;
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .home-page-description{
+        font-size: 16px;
+        color: #dddddd;
+        text-align: center;
+        margin-top: 50px;
+    }
 }
 
-@media screen and (min-width: 800px){
+/*For desktop screen*/
+@media screen and (min-width: 600px){
     .navigation-bar{
         display: flex;
         justify-content: space-between;
@@ -66,18 +91,27 @@ li{
         font-size: 32px;
         padding: 5px 10px;
     }
+    .social-media a{
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+    .welcome-text{
+        font-size: 32px;
+        color: #dddddd;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .home-page-description{
+        font-size: 16px;
+        color: #dddddd;
+        text-align: center;
+        width: 600px;
+        margin: 50px auto;
     
+    }
+
+
+
 }
 
-.welcome-text{
-    font-size: 32px;
-    color: #dddddd;
-    text-align: center;
-    margin-top: 100px;
-}
 
-.home-page-description{
-    font-size: 16px;
-    color: #dddddd;
-    text-align: center;
-}
